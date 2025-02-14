@@ -34,7 +34,7 @@ STATS_AMD = {
         "Performance Level": "auto",
         "GPU OverDrive value (%)": "0",
         "GPU Memory OverDrive value (%)": "0",
-        "Max Graphics Package Power (W)": "300.0",
+        "GPU Memory Allocated (VRAM%)": "300.0",
         "Average Graphics Package Power (W)": "41.0",
         "GPU use (%)": "0",
         "GFX Activity": "3485543173",

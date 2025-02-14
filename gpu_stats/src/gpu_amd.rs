@@ -118,7 +118,7 @@ impl From<&serde_json::Map<String, Value>> for GpuStats {
 
         // Memory Overdrive
         if let Some(v) = stats
-            .get("GPU Memory OverDrive value (%)")
+            .get("GPU Memory Allocated (VRAM%)")
             .and_then(|v| v.as_str())
         {
             gpu_stats.memory_overdrive = parse_value(v);
@@ -182,7 +182,7 @@ impl From<&serde_json::Map<String, Value>> for GpuStats {
         }
 
         if let Some(v) = stats
-            .get("GPU Memory OverDrive value (%)")
+            .get("GPU Memory Allocated (VRAM%)")
             .and_then(|v| v.as_str())
         {
             gpu_stats.gpu_memory_overdrive = Some(v.to_string());
@@ -446,7 +446,7 @@ mod tests {
                 "Max Graphics Package Power (W)": "560.0",
                 "Performance Level": "auto",
                 "GPU OverDrive value (%)": "0",
-                "GPU Memory OverDrive value (%)": "0",
+                "GPU Memory Allocated (VRAM%)": "0",
                 "Card series": "AMD INSTINCT MI250 (MCM) OAM AC MBA",
                 "Card model": "0x0b0c",
                 "Card vendor": "Advanced Micro Devices, Inc. [AMD/ATI]",
@@ -500,7 +500,7 @@ mod tests {
                 "Max Graphics Package Power (W)": "560.0",
                 "Performance Level": "auto",
                 "GPU OverDrive value (%)": "0",
-                "GPU Memory OverDrive value (%)": "0",
+                "GPU Memory Allocated (VRAM%)": "0",
                 "Card Series": "AMD INSTINCT MI250 (MCM) OAM AC MBA",
                 "Card Model": "0x740c",
                 "Card Vendor": "Advanced Micro Devices, Inc. [AMD/ATI]",

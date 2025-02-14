@@ -213,7 +213,7 @@ class GPUAMD:
                 "vbios_version": "VBIOS version",
                 "performance_level": "Performance Level",
                 "gpu_overdrive": "GPU OverDrive value (%)",
-                "gpu_memory_overdrive": "GPU Memory OverDrive value (%)",
+                "gpu_memory_overdrive": "GPU Memory Allocated (VRAM%)",
                 "max_power": "Max Graphics Package Power (W)",
                 "series": "Card series",
                 "model": "Card model",
